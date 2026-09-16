@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function WinOpen_wlodarczyk1() {
+            window.open("1.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=360,width=220,top=10,left=200");
+        }
+        function WinOpen_wlodarczyk2() {
+            window.open("2.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=360,width=220,top=900,left=200");
+        }
+        function WinOpen_wlodarczyk3() {
+            window.open("3.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=360,width=220,top=10,left=1100");
+        }
+        function WinOpen_wlodarczyk4() {
+            window.open("4.html", "okienko_z4", "toolbar=no,directories=no,menubar=no,height=360,width=220,top=900,left=1100");
+        }
+        function WinClose_wlodarczyk() {
+            window.close()
+        }
+    </script>
+
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 2cm; color: red; text-align: center;">Wykonał: Jan włodarczyk mój numer w dzienniku 22, czyli mam układ [(22) mod 4=2] układ 2</p>
+    <form class="center">
+        <input type="button_z1" name="zadanie1" value="grafika1" onclick="WinOpen_wlodarczyk1(' ')">
+        <input type="button_z2" name="zadanie2" value="grafika2" onclick="WinOpen_wlodarczyk2(' ')">
+        <input type="button_z3" name="zadanie3" value="grafika3" onclick="WinOpen_wlodarczyk3(' ')">
+        <input type="button_z4" name="zadanie4" value="grafika4" onclick="WinOpen_wlodarczyk4(' ')">
+        <input type="button" value="zamknij okno" onclick="WinClose_wlodarczyk()" />
+    </form>
+</body>
+
+</html>
