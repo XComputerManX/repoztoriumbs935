@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>proste obliczenia</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div style="color: rgb(0, 255, 0); font-size: 50px">
+      <script language="JavaScript">
+        var D1 = prompt("D1=", "");
+        var G1 = prompt("G1=", "");
+        var D2 = prompt("D2=", "");
+        var G2 = prompt("G2=", "");
+        var suma;
+        var d1 = parseFloat(D1);
+        var d2 = parseFloat(D2);
+        var g1 = parseFloat(G1);
+        var g2 = parseFloat(G2);
+        suma = ((d1 * 24 + g1) - (d2 * 24 + g2)) * 60 * 60;
+        { document.write("ilość sekund= " + suma + " sekund" + "<br>"); }
+      </script>
+    </div>
+  </body>
+</html>
