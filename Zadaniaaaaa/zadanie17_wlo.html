@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 17 - Włodarczyk 2P</title>
+<script type="text/javascript">
+function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<b>1. Wymień cztery sposoby wyprowadzania danych w JS</b><br>
+- z użyciem <b><u>document.write()</u></b>,<br>
+- z użyciem okienka <b><u>alert()</u></b>,<br>
+- do <b><u>okienek formularza</u></b>,<br>
+- do <b><u>tabeli</u></b>.<br><br>
+<b>2. Czym jest funkcja w JS (4 podpunkty)</b><br>
+1) Jest to <u>zbiór zgrupowanych instrukcji</u>, które możemy uruchamiać poprzez podanie ich <b>nazwy</b>,<br>
+2) Każda funkcja po wywołaniu <u>wykonuje swój wewnętrzny kod</u>,<br>
+3) Funkcja może mieć <b>argumenty</b>, które wchodzą do wnętrza funkcji i są tam przetwarzane, np. suma_wlo(a, b),<br>
+4) Może (nie zawsze) <u>zwrócić obliczoną wartość</u> zapisaną po słowie kluczowym <b>return</b>.<br><br>
+<b>3. Omów metody getElementsByName, getElementById, getElementsByTagName</b><br>
+<table border="1">
+<tr><td><b>Metoda</b></td><td><b>opis</b></td></tr>
+<tr><td><b>getElementById("id")</b></td><td>dostęp do elementu o <u>konkretnej wartości atrybutu id</u></td></tr>
+<tr><td><b>getElementsByTagName("znacznik")</b></td><td>dostęp do wszystkich elementów o <u>typie znacznika</u>, np. P lub DIV</td></tr>
+<tr><td><b>getElementsByName("nazwa")</b></td><td>dostęp do wszystkich elementów o <u>konkretnej wartości atrybutu name</u></td></tr>
+</table><br>
+<b>4. Omów właściwości innerHTML innerText className</b><br>
+<b><u>innerHTML</u></b> – właściwość, która umożliwia <u>odczyt, zmodyfikowanie, wstawienie albo usunięcie kodu HTML</u> z danego elementu HTML, np. w tabeli.<br><br>
+<b><u>innerText</u></b> – umożliwia określenie <u>ciągu znaków</u>, który zostanie umieszczony w elemencie.<br><br>
+<b><u>className</u></b> – umożliwia określenie <u>klasy CSS</u> użytej do prezentacji elementu.<br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>

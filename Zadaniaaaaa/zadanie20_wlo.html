@@ -1,0 +1,55 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Zadanie 20 - Włodarczyk</title>
+</head>
+<body>
+<script type="text/javascript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 20
+ function AB_wlo()
+ {
+ var xa_wlo=parseFloat(document.getElementById('xa').value);
+ var ya_wlo=parseFloat(document.getElementById('ya').value);
+ var xb_wlo=parseFloat(document.getElementById('xb').value);
+ var yb_wlo=parseFloat(document.getElementById('yb').value);
+ var d=Math.sqrt(Math.pow(xa_wlo-xb_wlo,2)+Math.pow(ya_wlo-yb_wlo,2));
+ document.getElementById("wynik_AB").innerHTML="|AB|= "+d.toFixed(2);
+ }
+ function BC_wlo()
+ {
+ var xb_wlo=parseFloat(document.getElementById('xb').value);
+ var yb_wlo=parseFloat(document.getElementById('yb').value);
+ var xc_wlo=parseFloat(document.getElementById('xc').value);
+ var yc_wlo=parseFloat(document.getElementById('yc').value);
+ var d=Math.sqrt(Math.pow(xb_wlo-xc_wlo,2)+Math.pow(yb_wlo-yc_wlo,2));
+ document.getElementById("wynik_BC").innerHTML="|BC|= "+d.toFixed(2);
+ }
+ function AC_wlo()
+ {
+ var xa_wlo=parseFloat(document.getElementById('xa').value);
+ var ya_wlo=parseFloat(document.getElementById('ya').value);
+ var xc_wlo=parseFloat(document.getElementById('xc').value);
+ var yc_wlo=parseFloat(document.getElementById('yc').value);
+ var d=Math.sqrt(Math.pow(xa_wlo-xc_wlo,2)+Math.pow(ya_wlo-yc_wlo,2));
+ document.getElementById("wynik_AC").innerHTML="|AC|= "+d.toFixed(2);
+ }
+ function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+</script>
+ <h1>Długości boków trójkąta</h1>
+ A( <input type="text" id="xa" size="5"> , <input type="text" id="ya" size="5"> )<br><br>
+ B( <input type="text" id="xb" size="5"> , <input type="text" id="yb" size="5"> )<br><br>
+ C( <input type="text" id="xc" size="5"> , <input type="text" id="yc" size="5"> )<br><br>
+ <input type="button" value="Oblicz AB" onclick="AB_wlo()">
+ <input type="button" value="Oblicz BC" onclick="BC_wlo()">
+ <input type="button" value="Oblicz AC" onclick="AC_wlo()"><br><br>
+ <div id="wynik_AB"></div>
+ <div id="wynik_BC"></div>
+ <div id="wynik_AC"></div>
+ <br>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>

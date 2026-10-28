@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 25 - Włodarczyk</title>
+</head>
+<body>
+<font color="#1E3CDC" face="Times New Roman" size="7">
+<script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 25
+// Autor: Jan Włodarczyk 2P
+// lambda = ln(2)/T1/2, N = No*e^(-lambda*t)
+// test: węgiel C14 T1/2=5700 lat, rad Ra226 T1/2=1600 lat
+ var No_wlo=parseFloat(prompt("No [sztuk]=",""));
+ var t_wlo=parseFloat(prompt("t [lat]=",""));
+ var T_wlo=parseFloat(prompt("T1/2 [lat]=",""));
+ var lambda_wlo=Math.log(2)/T_wlo;
+ var N_wlo=No_wlo*Math.pow(Math.E,-lambda_wlo*t_wlo);
+ document.write("N0="+No_wlo.toFixed(2)+"[sztuk]<br>");
+ document.write("t="+t_wlo.toFixed(2)+"[lat]<br>");
+ document.write("T1/2="+T_wlo.toFixed(2)+"[lat]<br>");
+ document.write("Lambda="+lambda_wlo.toFixed(7)+"[1/rok]<br>");
+ document.write("N="+N_wlo.toFixed(7)+"[sztuk]<br>");
+ function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+</script>
+</font>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>

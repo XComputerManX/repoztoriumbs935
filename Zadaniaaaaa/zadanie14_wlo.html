@@ -1,0 +1,21 @@
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Zadanie 14 - Włodarczyk</title>
+ </head>
+ <body>
+ <script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 14
+ var m_wlo=parseInt(prompt("m=",""));
+ var k_wlo=m_wlo+1;
+ document.write("m="+m_wlo+"<br>");
+ document.write("1/"+m_wlo+"=1/"+(k_wlo+1)+" + 1/"+(k_wlo*(k_wlo+1))+" + 1/"+(m_wlo*(m_wlo+1))+"<br>");
+ function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+ </script>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 23 - Włodarczyk</title>
+ <script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 23
+function drabina_wlo(d_wlo,x_wlo)
+{
+ return Math.sqrt(Math.pow(d_wlo,2)+Math.pow(x_wlo,2));
+}
+function alfa_wlo(d_wlo,x_wlo)
+{
+ return Math.atan(d_wlo/x_wlo)*180/Math.PI;
+}
+function oblicz_wlodarczyk(d,x)
+{
+ var d_wlo=parseFloat(d);
+ var x_wlo=parseFloat(x);
+ document.getElementsByName('drabina')[0].value=drabina_wlo(d_wlo,x_wlo).toFixed(2);
+ document.getElementsByName('alfa')[0].value=alfa_wlo(d_wlo,x_wlo).toFixed(2);
+}
+function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+Obliczanie długości drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="oblicz_wlodarczyk(this.d_dana_wlo.value,this.x_dana_wlo.value);return false">
+ Podaj d=
+ <input size="6" name="d_dana_wlo">
+ Podaj x=
+ <input size="6" name="x_dana_wlo">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="drabina">
+ Alfa=
+ <input size="6" name="alfa">
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>

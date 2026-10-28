@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 22 - Włodarczyk</title>
+ <script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 22
+function Pole_wlodarczyk(a_wlo,b_wlo)
+{
+ var a=parseFloat(a_wlo);
+ var b=parseFloat(b_wlo);
+ var P=a*b;
+ document.getElementsByName('pole')[0].value=P.toFixed(2);
+ wyprowadz_pole_wlo.innerHTML="P="+P.toFixed(2)+" cm^2";
+}
+function obwod_wlodarczyk(a_wlo,b_wlo)
+{
+ var a=parseFloat(a_wlo);
+ var b=parseFloat(b_wlo);
+ var Ob=2*a+2*b;
+ document.getElementsByName('obw')[0].value=Ob.toFixed(2);
+ wyprowadz_obwod_wlo.innerHTML="Ob="+Ob.toFixed(2)+" cm";
+}
+function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="Pole_wlodarczyk(this.a_dana_wlo.value,this.b_dana_wlo.value); obwod_wlodarczyk(this.a_dana_wlo.value,this.b_dana_wlo.value);return false">
+ Podaj a=
+ <input size="6" name="a_dana_wlo">
+ Podaj b=
+ <input size="6" name="b_dana_wlo">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ P=
+ <input size="6" name="pole">
+ Ob=
+ <input size="6" name="obw">
+</form>
+<table>
+ <tr id="wyprowadz_pole_wlo"></tr>
+ <tr id="wyprowadz_obwod_wlo"></tr>
+</table>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>

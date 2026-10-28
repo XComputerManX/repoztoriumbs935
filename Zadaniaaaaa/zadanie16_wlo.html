@@ -1,0 +1,36 @@
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Zadanie 16 - Włodarczyk</title>
+ </head>
+ <body>
+ <div id="wydruk" style="color:navy;white-space:nowrap;">
+ <script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 16
+ var A_wlo=parseFloat(prompt("Podaj pierwszą liczbę A=",""));
+ var B_wlo=parseFloat(prompt("Podaj drugą liczbę B=",""));
+ var s1=Math.pow(A_wlo,3);
+ var s2=3*Math.pow(A_wlo,2)*B_wlo;
+ var s3=3*A_wlo*Math.pow(B_wlo,2);
+ var s4=Math.pow(B_wlo,3);
+ document.write("wczytane liczby:&nbsp;&nbsp;&nbsp;A="+A_wlo+"&nbsp;&nbsp;&nbsp;B="+B_wlo+"<br>");
+ document.write("<span id='linia2'>("+A_wlo+" + "+B_wlo+")^3= "+A_wlo+"^3 + 3*(("+A_wlo+")^2)*("+B_wlo+") + 3*("+A_wlo+")*(("+B_wlo+")^2) + "+B_wlo+"^3 = "+s1+" + "+s2+" + "+s3+" + "+s4+" = "+(s1+s2+s3+s4)+"</span>");
+ function dopasuj_wlodarczyk()
+ {
+ document.getElementById("wydruk").style.fontSize="20px";
+ var r=20*(document.body.clientWidth-20)/document.getElementById("linia2").offsetWidth;
+ document.getElementById("wydruk").style.fontSize=r+"px";
+ }
+ window.onload=dopasuj_wlodarczyk;
+ window.onresize=dopasuj_wlodarczyk;
+ function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <br>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+ </body>
+</html>

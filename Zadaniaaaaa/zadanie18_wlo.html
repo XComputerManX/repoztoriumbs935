@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie funkcji</title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+// Jan Włodarczyk 2P 28.10.2026
+// Zadanie 18
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_wlo(a, b) {
+ return a + b;
+ }
+ function odejmowanie_wlo(a, b) {
+ return a - b;
+ }
+ function mnozenie_wlo(a, b) {
+ return a * b;
+ }
+ function od_kwadratu_wlo(a, b) {
+ return a+"^2 = "+(a*a)+"<br>"+b+"^2 = "+(b*b);
+ }
+ function reszta_z_dzielenia_a_przez_b_wlo(a, b) {
+ return a % b;
+ }
+ document.write("suma="+suma_wlo(a,b)+"<br>");
+ document.write("odejmowanie="+odejmowanie_wlo(a,b)+"<br>");
+ document.write("mnozenie="+mnozenie_wlo(a,b)+"<br>");
+ document.write(od_kwadratu_wlo(a,b)+"<br>");
+ document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_wlo(a,b)+"<br>");
+ function okno_zamknij_wlodarczyk()
+ {
+ window.close()
+ }
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wlodarczyk()"/>
+</body>
+</html>
